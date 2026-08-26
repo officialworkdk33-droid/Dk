@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#17202a}
+.app{max-width:1400px;margin:auto;padding:24px}
+header,.resultHead{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.card{background:#fff;border:1px solid #dfe5ea;border-radius:14px;padding:20px;margin-bottom:18px}
+h1{margin:0 0 6px}.badge,.status{padding:7px 11px;border-radius:999px;background:#e7f6ec;color:#146c2e;font-size:13px}
+button{border:0;border-radius:8px;padding:11px 16px;background:#17202a;color:white;cursor:pointer}
+button:disabled{opacity:.5}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+label span{display:block;font-size:12px;color:#687581;margin-bottom:5px}
+input{width:100%;padding:10px;border:1px solid #ccd4db;border-radius:7px}
+.tableWrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:1200px}
+th,td{border:1px solid #e2e7eb;padding:6px}th{background:#f6f8fa;text-align:left;font-size:12px}
+.warning{margin:12px 0;padding:12px;border-radius:8px;background:#fff5d8;color:#735b00}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.app{padding:12px}.grid{grid-template-columns:1fr}.resultHead{align-items:flex-start;flex-direction:column}}
